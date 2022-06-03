@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+ 
+  <script type="text/javascript">
+    document.write ('<p> Time is: <span id="date-time">', new Date().toLocaleString(), '<\/span>.<\/p>')
+    if (document.getElementById) onload = function () {
+      setInterval ("document.getElementById ('date-time').firstChild.data = new Date().toLocaleString()", 50)
+    }
+    </script>
+</body>
+</html>
